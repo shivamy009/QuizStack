@@ -6,7 +6,8 @@ import { useAuthStore } from '../store/useAuthStore'
 // import AdminquizForm from './AdminquizForm'
 import UserProfile from '../UserProfile.jsx/UserProfile'
 import Settingspage from '../UserProfile.jsx/Settingspage'
-import AdminquizForm from '../Admin/AdminquizForm'
+import Adminquizform from './Adminquizform'
+// import AdminquizForm from './Adminquizform'
 
 const AdminProfile = () => {
     const {authUser,checkAuth,logout} = useAuthStore()
@@ -43,7 +44,7 @@ const AdminProfile = () => {
   <div className="flex-1 p-6 bg-gray-100">
           <Routes>
             <Route path="/" element={<UserProfile/>} />
-            <Route path="/quizzes" element={<AdminquizForm/>} />
+            <Route path="/quizzes" element={<Adminquizform/>} />
             <Route path="/settings" element={<Settingspage/>} />
           </Routes>
         </div>
