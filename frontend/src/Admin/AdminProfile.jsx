@@ -6,7 +6,7 @@ import { useAuthStore } from '../store/useAuthStore'
 // import AdminquizForm from './AdminquizForm'
 import UserProfile from '../UserProfile.jsx/UserProfile'
 import Settingspage from '../UserProfile.jsx/Settingspage'
-import AdminquizForm from '../../src/Admin/AdminquizForm'
+import AdminquizForm from '../../../frontend/src/Admin/AdminquizForm'
 
 const AdminProfile = () => {
     const {authUser,checkAuth,logout} = useAuthStore()
