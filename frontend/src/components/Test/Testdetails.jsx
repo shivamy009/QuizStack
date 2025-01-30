@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import animation from "../../assets/Girl Making schedule.mp4";
+// import animation from "../../assets/Girl Making schedule.mp4";
+import animation from "../../../../frontend/public/Girl-Making-Schedule.mp4"
 import { CalendarMinus2, Languages, NotebookText } from "lucide-react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useQuizStore } from "../../store/useQuizStore";
