@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { useQuizStore } from '../store/useQuizStore';
 import uploadImage from '../utils/ImageUploader';
 
-const AdminQuizForm = () => {
+const AdminquizForm = () => {
     const [quizData, setQuizData] = useState({
         title: '',
         description: '',
@@ -271,4 +271,4 @@ const AdminQuizForm = () => {
     );
 };
 
-export default AdminQuizForm;
+export default AdminquizForm;

@@ -3,9 +3,10 @@ import { BookCheck, LayoutDashboard, LogOut, Settings } from 'lucide-react'
 import React from 'react'
 import { Router,Route, Routes, Link, Navigate } from 'react-router-dom'
 import { useAuthStore } from '../store/useAuthStore'
-import AdminQuizForm from './AdminquizForm'
+// import AdminquizForm from './AdminquizForm'
 import UserProfile from '../UserProfile.jsx/UserProfile'
 import Settingspage from '../UserProfile.jsx/Settingspage'
+import AdminquizForm from './AdminquizForm'
 
 const AdminProfile = () => {
     const {authUser,checkAuth,logout} = useAuthStore()
@@ -42,7 +43,7 @@ const AdminProfile = () => {
   <div className="flex-1 p-6 bg-gray-100">
           <Routes>
             <Route path="/" element={<UserProfile/>} />
-            <Route path="/quizzes" element={<AdminQuizForm/>} />
+            <Route path="/quizzes" element={<AdminquizForm/>} />
             <Route path="/settings" element={<Settingspage/>} />
           </Routes>
         </div>
